@@ -1,19 +1,13 @@
 #include <stdio.h>
 
 int main() {
-    int i = 2;
+    int i = 8;
 
-    if (i % 15 == 0) {
-        printf("Love IU");
-    }
-    else if (i % 3 == 0) {
-        printf("Love");
-    }
-    else if (i % 5 == 0) {
-        printf("IU");
+    if (i & (i-1)) {
+        printf("false");
     }
     else {
-        printf("%d\n", i);
+        printf("true");
     }
 
     return 0;
